@@ -1,0 +1,140 @@
+body{
+    background-color: #e0ffff;
+    color:#1b5182;
+}
+h1{
+    font-size: 300%;
+    font-family: Cabria;
+    text-align: center;
+}
+h2{
+    font-size: 200%;
+    font-family: Geneva;
+    color: #3277ac;
+    text-align: center;
+    border: 1px solid navy;
+}
+h3{
+    font-size: 150%;
+    font-family: Geneva;
+    color: #3277ac;
+}
+p{
+    line-height: 25px;
+    padding: 10px;
+    font-size: 120%;
+}
+img{
+    border:solid 3px #22898b;
+    padding: 10px;
+    margin: 20px;
+    border-top-right-radius: 30px;
+}
+li{
+    margin-left: 50px;
+    color: black;
+}
+ul{
+    list-style-type: circle;
+}
+ol{
+    list-style-type: decimal;
+}
+nav{
+    border: 2px solid blue;
+    border-style: dotted;
+    padding: 5px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav a{
+    background-color: white;
+    padding: 2px;
+}
+.current{
+    text-decoration: underline;
+    border: solid 3px blue;
+}
+nav ul li{
+    font-size: 20px;
+    display:inline-block;
+}
+a{
+    text-decoration: blue;
+}
+#skip{
+    text-transform: uppercase;
+    position: absolute;
+    left: -500px;
+}
+#skip.focus{
+    left: 600px
+} 
+
+body > a{
+    position: fixed;
+    left: -400px;
+}
+body > a:focus{
+    position: fixed;
+    left: 200px;
+}
+:focus{
+    border: 2px solid black;
+}
+.recipe_gallary{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.recipe_gallary img{
+    border: none;
+    max-width: 100%;
+    height: 70%;
+    border-top-right-radius: 0%;
+}
+.gallary{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.gallary img{
+    border: none;
+    max-width: 100%;
+    height: 70%;
+    border-top-right-radius: 0%;
+}
+.travel_gallary{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: center;
+    align-items:center;
+}
+.travel_gallary img{
+    border: none;
+    max-width: 100%;
+    height: 70%;
+    border-top-right-radius: 0%;
+}
+.image{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.image:hover{
+    animation-duration: 0.7s;
+    animation-name: rotate; 
+}
+/*.animate:hover{
+    animation-duration: 8s;
+    animation-name: slidein; 
+    animation-iteration-count: 1;
+}*/
+@keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
