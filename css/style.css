@@ -154,7 +154,7 @@ body > a:focus{
     grid-template-columns: 100%;
     grid-column: 1/-1;
     background-repeat: no-repeat;
-    background-image: url("../images/petbackground.jpeg");
+    background-image: url("../petbackground.jpeg");
     background-attachment: fixed; /* Parallax effect */     
     background-position: center;  /* Parallax effect */
     background-repeat: no-repeat; /* Parallax effect */
@@ -170,7 +170,7 @@ body > a:focus{
     grid-template-columns: 100%;
     grid-column: 1/-1;
     background-repeat: no-repeat;
-    background-image: url("../images/planebackground.jpeg");
+    background-image: url("../planebackground.jpeg");
     background-attachment: fixed; /* Parallax effect */     
     background-position: center;  /* Parallax effect */
     background-repeat: no-repeat; /* Parallax effect */
