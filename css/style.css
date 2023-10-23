@@ -9,10 +9,11 @@ h1{
 }
 h2{
     font-size: 200%;
-    font-family: Geneva;
+    font-family: Comic Sans MS;
     color: #3277ac;
     text-align: center;
     border: 1px solid navy;
+    text-shadow: 3px 2px 1px white;
 }
 h3{
     font-size: 150%;
@@ -124,6 +125,7 @@ body > a:focus{
 .image:hover{
     animation-duration: 0.7s;
     animation-name: rotate; 
+    animation-iteration-count: 1;
 }
 /*.animate:hover{
     animation-duration: 8s;
@@ -138,3 +140,69 @@ body > a:focus{
       transform: rotate(360deg);
     }
   }
+@media (prefers-reduced-motion) {
+    .image:hover{
+        animation-duration: 0s;
+        animation-name: none; 
+    }
+    .gif{
+        display: none;
+    }
+}
+
+.name{
+    grid-template-columns: 100%;
+    grid-column: 1/-1;
+    background-repeat: no-repeat;
+    background-image: url("../images/petbackground.jpeg");
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */   
+}
+.scroll h3{
+    color: black;
+}
+.scroll ul{
+    font-size: 100%;
+}
+.travelname{
+    grid-template-columns: 100%;
+    grid-column: 1/-1;
+    background-repeat: no-repeat;
+    background-image: url("../images/planebackground.jpeg");
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */   
+}
+figcaption{
+    font-size: 125%;
+}
+.ingredientscroll h4{
+    color: black;
+}
+.ingredientscroll ul{
+    font-size: 100%;
+}
+.ingredientscroll h3{
+    font-size: 120%;
+    color: black;
+    text-decoration: underline;
+}
+.recipename{
+    grid-template-columns: 100%;
+    grid-column: 1/-1;
+    background-repeat: no-repeat;
+    background-image: url("../images/foodbackground.jpeg");
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */   
+}
+.recipename h2{
+    color: black;
+}
+span{
+    font-size: 130%;
+}
